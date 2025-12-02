@@ -1,0 +1,23 @@
+{
+  "name": "easein-landing",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "generateCodes": "node generate-invite-code.js"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.9.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^6.0.1"
+  }
+}

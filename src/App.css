@@ -1,0 +1,487 @@
+.landing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+.hero-section {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.coming-soon {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tagline {
+  font-size: 1.5rem;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.screenshot-section {
+  width: 100%;
+  max-width: 800px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.screenshot-placeholder {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.app-screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot-fallback {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4rem;
+}
+
+.screenshot-fallback svg {
+  opacity: 0.5;
+}
+
+.screenshot-fallback p {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.waitlist-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  opacity: 0.95;
+}
+
+.waitlist-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #667eea;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.waitlist-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #f8f9ff;
+}
+
+.waitlist-button:active {
+  transform: translateY(0);
+}
+
+.footer {
+  padding: 2rem 0 1rem;
+  text-align: center;
+  opacity: 0.8;
+  font-size: 0.875rem;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Invite Code Gate Styles */
+.invite-code-gate {
+  width: 100%;
+  max-width: 600px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.invite-input-section {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 3rem 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.invite-prompt {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.95;
+  font-weight: 500;
+}
+
+.invite-input {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-size: 1.125rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.invite-input:focus {
+  outline: none;
+  border-color: white;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+.invite-input::placeholder {
+  color: #999;
+}
+
+.invite-verify-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #667eea;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.invite-verify-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: #f8f9ff;
+}
+
+.invite-verify-button:active {
+  transform: translateY(0);
+}
+
+.invite-error {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: rgba(255, 100, 100, 0.2);
+  color: white;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255, 100, 100, 0.3);
+}
+
+.invite-success-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.invite-success-message {
+  padding: 1.25rem;
+  background: rgba(76, 175, 80, 0.2);
+  border: 1px solid rgba(76, 175, 80, 0.4);
+  color: white;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.verified-download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.verified-download-button {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: white;
+  color: #333;
+}
+
+.verified-download-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.verified-download-button:active {
+  transform: translateY(-1px);
+}
+
+.verified-download-button.android {
+  border-left: 4px solid #3DDC84;
+}
+
+.verified-download-button.ios {
+  border-left: 4px solid #000;
+}
+
+.download-icon-small {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.verified-download-button.android .download-icon-small {
+  color: #3DDC84;
+}
+
+.verified-download-button.ios .download-icon-small {
+  color: #000;
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.25rem;
+  text-align: left;
+}
+
+.button-platform {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.button-action {
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.7;
+}
+
+/* Download Page Styles */
+.download-section {
+  width: 100%;
+  max-width: 1000px;
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.download-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.download-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.download-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.download-card:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.download-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.download-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.download-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.download-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.download-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #667eea;
+  background: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.download-button:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  background: #f8f9ff;
+}
+
+.download-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.info-section {
+  animation: fadeInUp 0.8s ease-out 0.5s both;
+  max-width: 600px;
+}
+
+.info-text {
+  font-size: 1.125rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .coming-soon {
+    font-size: 2.5rem;
+  }
+
+  .tagline {
+    font-size: 1.125rem;
+  }
+
+  .main-content {
+    gap: 2.5rem;
+  }
+
+  .waitlist-button {
+    padding: 0.875rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .download-options {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .download-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .invite-input-section {
+    padding: 2rem 1.5rem;
+  }
+
+  .invite-input {
+    font-size: 1rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .invite-verify-button {
+    font-size: 1rem;
+    padding: 0.875rem 1.5rem;
+  }
+
+  .verified-download-button {
+    padding: 1.25rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .button-platform {
+    font-size: 1.125rem;
+  }
+
+  .button-action {
+    font-size: 0.875rem;
+  }
+}
