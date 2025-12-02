@@ -59,6 +59,39 @@ Preview the production build:
 npm run preview
 ```
 
+## Deployment
+
+### GitHub Pages
+
+The site is configured to deploy to GitHub Pages automatically.
+
+#### Automatic Deployment
+
+Every push to the `main` branch automatically triggers a GitHub Actions workflow that builds and deploys the site to GitHub Pages.
+
+**Setup:**
+1. Go to your repository settings on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Push to the `main` branch and the workflow will run automatically
+
+The site will be available at: `https://raquelhortab.github.io/EaseInLanding/`
+
+#### Manual Deployment
+
+You can also deploy manually using the deploy script:
+
+```bash
+npm run deploy
+```
+
+This will:
+1. Build the production version
+2. Deploy the `dist` folder to the `gh-pages` branch
+3. Your site will be live at the URL above
+
+**Note:** Make sure you have committed all changes before deploying manually.
+
 ## Features
 
 - **Coming Soon message** - Clean hero section announcing the app
