@@ -88,7 +88,7 @@
 
 .screenshot-placeholder {
   width: 100%;
-  background: #1a1a1a;
+  /*background: #1a1a1a;*/
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -253,7 +253,7 @@
 .invite-error {
   margin-top: 1rem;
   padding: 1rem;
-  background: rgba(255, 100, 100, 0.2);
+  /*background: rgba(255, 100, 100, 0.2);*/
   color: white;
   border-radius: 8px;
   font-size: 0.95rem;
@@ -268,7 +268,7 @@
 
 .invite-success-message {
   padding: 1.25rem;
-  background: #14532d;
+  /*background: #14532d;*/
   border: 1px solid #166534;
   color: #86efac;
   border-radius: 12px;
