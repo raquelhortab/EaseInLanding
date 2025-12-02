@@ -160,3 +160,4 @@ You can customize the landing page by editing:
 - `src/pages/Download.jsx` - Download page content
 - `src/App.css` - Styling and colors
 - `.env` - Email address for waitlist signups
+
