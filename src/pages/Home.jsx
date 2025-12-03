@@ -23,7 +23,7 @@ Thanks!`)
       <div className="screenshot-section">
         <div className="screenshot-placeholder">
           <img
-            src="/screenshot.png"
+            src={`${import.meta.env.BASE_URL}screenshot.png`}
             alt="Ease In App Preview"
             className="app-screenshot"
             onError={(e) => {

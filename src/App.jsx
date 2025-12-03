@@ -5,7 +5,7 @@ import Download from './pages/Download'
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="landing-page">
         <div className="container">
           <header className="header">
