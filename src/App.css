@@ -2,19 +2,19 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #000000;
+  background: #0d0d0d;
   color: #f9fafb;
   position: relative;
-  overflow: hidden;
 }
 
 .landing-page::before {
   content: '';
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  min-height: 100vh;
   pointer-events: none;
   background:
     radial-gradient(circle at -35% 30%, rgba(75, 153, 198, 0.5) 0%, transparent 70%),
@@ -103,7 +103,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  border: 1px solid #3f3f3f;
+  /*border: 1px solid #3f3f3f;*/
 }
 
 .app-screenshot {
