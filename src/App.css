@@ -76,7 +76,7 @@
 
 .tagline {
   font-size: 1.5rem;
-  color: #9ca3af;
+  color: #cdd4df;
   font-weight: 300;
 }
 
@@ -164,7 +164,7 @@
 .footer {
   padding: 2rem 0 1rem;
   text-align: center;
-  color: #9ca3af;
+  color: #cdd4df;
   font-size: 0.875rem;
 }
 
@@ -197,7 +197,7 @@
 .invite-prompt {
   font-size: 1.125rem;
   margin-bottom: 1.5rem;
-  color: #9ca3af;
+  color: #cdd4df;
   font-weight: 500;
 }
 
@@ -417,7 +417,7 @@
 
 .download-card p {
   font-size: 1rem;
-  color: #9ca3af;
+  color: #cdd4df;
   margin: 0;
 }
 
@@ -444,7 +444,7 @@
   opacity: 0.4;
   cursor: not-allowed;
   background: #71717a;
-  color: #9ca3af;
+  color: #cdd4df;
 }
 
 .info-section {
@@ -454,7 +454,7 @@
 
 .info-text {
   font-size: 1.125rem;
-  color: #9ca3af;
+  color: #cdd4df;
   line-height: 1.6;
 }
 
