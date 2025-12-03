@@ -18,7 +18,7 @@ Gràcies!`)
       <div className="hero-section">
         <h2 className="coming-soon">Molt Aviat</h2>
         <p className="tagline">
-          Alguna cosa increïble està en camí. Estigueu atents!
+          Estigueu atents!
         </p>
       </div>
 
