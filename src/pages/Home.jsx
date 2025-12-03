@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 function Home() {
-  const waitlistEmail = import.meta.env.VITE_WAITLIST_EMAIL || 'hello@example.com'
+  const waitlistEmail = import.meta.env.VITE_WAITLIST_EMAIL || 'the.ease.in.app@gmail.com'
   const subject = encodeURIComponent('Unir-me a la llista d\'espera d\'Ease In')
   const body = encodeURIComponent(`Hola,
 
