@@ -18,7 +18,7 @@ function App() {
           </Routes>
 
           <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Ease In. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Ease In. Tots els drets reservats.</p>
           </footer>
         </div>
       </div>

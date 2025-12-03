@@ -83,7 +83,7 @@ function InviteCodeGate() {
     setUrls(null)
 
     if (!code.trim()) {
-      setError('Please enter an invite code')
+      setError('Si us plau, introdueix un codi d\'invitació')
       return
     }
 
@@ -94,7 +94,7 @@ function InviteCodeGate() {
     const inviteData = INVITE_DATA[hashedCode]
 
     if (!inviteData) {
-      setError('Invalid invite code. Please check and try again.')
+      setError('Codi d\'invitació no vàlid. Si us plau, comprova-ho i torna-ho a provar.')
       return
     }
 
@@ -103,7 +103,7 @@ function InviteCodeGate() {
     const iosUrl = decryptUrl(inviteData.iosUrl, code.trim())
 
     if (!androidUrl || !iosUrl) {
-      setError('Error decrypting URLs. Please try again.')
+      setError('Error en desxifrar les URLs. Si us plau, torna-ho a provar.')
       return
     }
 
@@ -120,19 +120,19 @@ function InviteCodeGate() {
     <div className="invite-code-gate">
       {!urls ? (
         <div className="invite-input-section">
-          <p className="invite-prompt">Enter your invite code to access downloads</p>
+          <p className="invite-prompt">Introdueix el teu codi d'invitació per accedir a les descàrregues</p>
 
           <input
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Enter invite code"
+            placeholder="Introdueix el codi d'invitació"
             className="invite-input"
           />
 
           <button onClick={handleSubmit} className="invite-verify-button">
-            Verify Code
+            Verificar codi
           </button>
 
           {error && (
@@ -144,7 +144,7 @@ function InviteCodeGate() {
       ) : (
         <div className="invite-success-section">
           <div className="invite-success-message">
-            ✓ Code verified! Download the app:
+            ✓ Codi verificat! Descarrega l'aplicació:
           </div>
 
           <div className="verified-download-buttons">
@@ -160,7 +160,7 @@ function InviteCodeGate() {
               </div>
               <div className="button-text">
                 <div className="button-platform">Android</div>
-                <div className="button-action">Download Now</div>
+                <div className="button-action">Descarrega ara</div>
               </div>
             </button>
 
@@ -176,7 +176,7 @@ function InviteCodeGate() {
               </div>
               <div className="button-text">
                 <div className="button-platform">iOS</div>
-                <div className="button-action">Download Now</div>
+                <div className="button-action">Descarrega ara</div>
               </div>
             </button>
           </div>

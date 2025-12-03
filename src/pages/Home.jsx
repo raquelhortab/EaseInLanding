@@ -1,22 +1,22 @@
 function Home() {
   const waitlistEmail = import.meta.env.VITE_WAITLIST_EMAIL || 'hello@example.com'
-  const subject = encodeURIComponent('Join Ease In Waitlist')
-  const body = encodeURIComponent(`Hi there,
+  const subject = encodeURIComponent('Unir-me a la llista d\'espera d\'Ease In')
+  const body = encodeURIComponent(`Hola,
 
-I'm interested in joining the Ease In waitlist!
+Estic interessat/ada en unir-me a la llista d'espera d'Ease In!
 
-Please notify me when the app is available.
+Si us plau, notifiqueu-me quan l'aplicació estigui disponible.
 
-Thanks!`)
+Gràcies!`)
 
   const mailtoLink = `mailto:${waitlistEmail}?subject=${subject}&body=${body}`
 
   return (
     <main className="main-content">
       <div className="hero-section">
-        <h2 className="coming-soon">Coming Soon</h2>
+        <h2 className="coming-soon">Molt Aviat</h2>
         <p className="tagline">
-          Something amazing is on the way. Stay tuned!
+          Alguna cosa increïble està en camí. Estigueu atents!
         </p>
       </div>
 
@@ -24,7 +24,7 @@ Thanks!`)
         <div className="screenshot-placeholder">
           <img
             src={`${import.meta.env.BASE_URL}screenshot.png`}
-            alt="Ease In App Preview"
+            alt="Vista prèvia d'Ease In"
             className="app-screenshot"
             onError={(e) => {
               e.target.style.display = 'none'
@@ -44,20 +44,20 @@ Thanks!`)
               <circle cx="8.5" cy="8.5" r="1.5"/>
               <polyline points="21 15 16 10 5 21"/>
             </svg>
-            <p>App Preview</p>
+            <p>Vista prèvia de l'aplicació</p>
           </div>
         </div>
       </div>
 
       <div className="cta-section">
         <p className="waitlist-text">
-          Be the first to know when we launch
+          Sigues el primer a saber quan llancem
         </p>
         <a
           href={mailtoLink}
           className="waitlist-button"
         >
-          Join the Waitlist
+          Uneix-te a la llista d'espera
         </a>
       </div>
     </main>

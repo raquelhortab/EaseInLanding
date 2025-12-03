@@ -4,9 +4,9 @@ function Download() {
   return (
     <main className="main-content">
       <div className="hero-section">
-        <h2 className="coming-soon">Download Ease In</h2>
+        <h2 className="coming-soon">Descarrega Ease In</h2>
         <p className="tagline">
-          Early access is available with an invite code
+          L'accés anticipat està disponible amb un codi d'invitació
         </p>
       </div>
 
@@ -14,7 +14,7 @@ function Download() {
 
       <div className="info-section">
         <p className="info-text">
-          Don't have an invite code? Join our waitlist to be notified when public access is available!
+          No tens un codi d'invitació? Uneix-te a la nostra llista d'espera per ser notificat quan l'accés públic estigui disponible!
         </p>
       </div>
     </main>
