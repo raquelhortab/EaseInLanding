@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function Home() {
   const waitlistEmail = import.meta.env.VITE_WAITLIST_EMAIL || 'hello@example.com'
   const subject = encodeURIComponent('Unir-me a la llista d\'espera d\'Ease In')
@@ -51,7 +53,7 @@ Gràcies!`)
 
       <div className="cta-section">
         <p className="waitlist-text">
-          Sigues el primer a saber quan llancem
+          Sigues el primer a saber quan llencem
         </p>
         <a
           href={mailtoLink}
@@ -59,6 +61,12 @@ Gràcies!`)
         >
           Uneix-te a la llista d'espera
         </a>
+        <Link
+          to="/download"
+          className="secondary-button"
+        >
+          Tinc codi d'accés
+        </Link>
       </div>
     </main>
   )

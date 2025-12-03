@@ -43,11 +43,22 @@
   padding: 1rem 0;
 }
 
+.logo-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.8;
+}
+
 .logo {
   font-size: 2rem;
   font-weight: 700;
   color: #f9fafb;
   letter-spacing: -0.5px;
+  margin: 0;
 }
 
 .main-content {
@@ -158,6 +169,31 @@
 }
 
 .waitlist-button:active {
+  transform: translateY(0);
+}
+
+.secondary-button {
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #f9fafb;
+  background: #635769;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 87, 105, 0.3);
+}
+
+.secondary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 87, 105, 0.4);
+  background: #735d7d;
+}
+
+.secondary-button:active {
   transform: translateY(0);
 }
 
@@ -472,6 +508,11 @@
   }
 
   .waitlist-button {
+    padding: 0.875rem 2.5rem;
+    font-size: 1rem;
+  }
+
+  .secondary-button {
     padding: 0.875rem 2.5rem;
     font-size: 1rem;
   }

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import Home from './pages/Home'
 import Download from './pages/Download'
@@ -9,7 +9,9 @@ function App() {
       <div className="landing-page">
         <div className="container">
           <header className="header">
-            <h1 className="logo">Ease In</h1>
+            <Link to="/" className="logo-link">
+              <h1 className="logo">EaseIn</h1>
+            </Link>
           </header>
 
           <Routes>
